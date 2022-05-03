@@ -18,6 +18,8 @@ body {
     width: 100%;
     overflow: hidden;
     height: 100px;
+    background-color: white;
+    z-index: 99;
     /* border-bottom: 1px solid black; */
 }
 
@@ -56,6 +58,39 @@ nav {
     font-weight: 500;
 }
 
+.active {
+    font-weight: bold;
+}
+
+main {
+    position: relative;
+    top: 100px;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 #img-plage {
     width: 100%;
+    user-select: none;
+}
+
+.text {
+    /* background-color: gray; */
+    width: fit-content;
+    padding: 40px;
+    z-index: 90;
+    position: absolute;
+    top: 250px;
+    left: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.text > h1, h2 {
+    font-size: 70px;
+    color: black;
 }
