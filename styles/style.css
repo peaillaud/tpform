@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 
 html {
     font-family: 'Lato', sans-serif;
@@ -9,26 +11,51 @@ body {
 }
 
 .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    /* border-bottom: 1px solid black; */
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    overflow: hidden;
-    height: 90px;
 }
 
 .navig {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: relative;
-    left: 1200px;
+    left: 1050px;
 }
 
 .navig > .item {
     padding: 0px 25px;
     margin: 0;
+    font-size: 20px;
+    float: left;
+}
+
+.navig a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: 'Whisper', cursive;
+    font-size: 55px;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    font-weight: 500;
+}
+
+#img-plage {
+    width: 100%;
 }
