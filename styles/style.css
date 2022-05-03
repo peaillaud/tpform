@@ -4,12 +4,17 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     overflow: hidden;
+    height: 90px;
 }
 
 .navig {
@@ -20,7 +25,7 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
-    left: 750px;
+    left: 1200px;
 }
 
 .navig > .item {
