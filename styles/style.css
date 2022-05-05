@@ -1,7 +1,8 @@
+/*Ce n'est pas responsive...*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
-
 html {
     font-family: 'Lato', sans-serif;
 }
@@ -37,7 +38,7 @@ nav {
     left: 1050px;
 }
 
-.navig > .item {
+.navig>.item {
     padding: 0px 25px;
     margin: 0;
     font-size: 20px;
@@ -90,7 +91,8 @@ main {
     border-radius: 20px;
 }
 
-.text > h1, h2 {
+.text>h1,
+h2 {
     font-size: 70px;
     color: black;
 }
