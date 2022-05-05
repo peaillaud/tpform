@@ -27,9 +27,35 @@
     <main>
         <div class="container">
             <div class="formcontainer">
-                <form action="../scripts/app.js" method="post"></form>
+                <form action="../scripts/app.js" method="post">
+                    <div class="formitem">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" required>
+                    </div>
+                    <div class="formitem">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required>
+                    </div>
+                    <div class="formitem">
+                        <label for="tel">Numéro de téléphone :</label>
+                        <input type="tel" name="tel" id="tel" required>
+                    </div>
+                    <div class="formitem">
+                        <label for="email">E-mail :</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="formitem">
+                        <label for="sexe">Sexe :</label>
+                        <input type="radio" name="sexe" id="sexe" required>
+                    </div>
+                    <div class="formitem">
+                        <input type="submit" value="Subscribe!">
+                    </div>
+                </form>
+
             </div>
         </div>
     </main>
 </body>
+
 </html>
