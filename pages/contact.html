@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/contact.css">
+
 </head>
 
 
@@ -29,27 +30,58 @@
             <div class="formcontainer">
                 <form action="../scripts/app.js" method="post">
                     <div class="formitem">
-                        <label for="nom">Nom :</label>
-                        <input type="text" name="nom" id="nom" required>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     </div>
                     <div class="formitem">
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" id="prenom" required>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
                     </div>
                     <div class="formitem">
-                        <label for="tel">Numéro de téléphone :</label>
-                        <input type="tel" name="tel" id="tel" required>
-                    </div> <!-- /.formitem -->
-                    <div class="formitem">
-                        <label for="email">E-mail :</label>
-                        <input type="email" name="email" id="email" required>
+                        <label for="text">Téléphone</label>
+                        <input type="text" name="tel" id="tel" placeholder="Numéro de téléphone" required>
                     </div>
                     <div class="formitem">
-                        <label for="sexe">Sexe :</label>
-                        <input type="radio" name="sexe" id="sexe" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
                     </div>
                     <div class="formitem">
-                        <input type="submit" value="Subscribe!">
+                        <label for="naissance">Date de naissance</label>
+                        <input type="date" name="naissance" id="naissance" placeholder="Date de naissance" required>
+                    </div>
+                    <fieldset>
+                        <legend>Sexe :</legend>
+                        <div class="itemsboxfs">
+                            <div class="fieldsetitem">
+                                <input type="radio" id="homme" name="sexe" required>
+                                <label for="homme">Homme</label>
+                            </div>
+                            <div class="fieldsetitem">
+                                <input type="radio" id="femme" name="sexe" required>
+                                <label for="femme">Femme</label>
+                            </div>
+                            <div class="fieldsetitem">
+                                <input type="radio" id="autre" name="sexe" required>
+                                <label for="autre">Autre</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="formitem">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="password" id="password"
+                            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                    </div>
+                    <div class="formitem">
+                        <label for="passwordconf">Confirmation du mot de passe</label>
+                        <input type="password" name="passwordconf" id="passwordconf"
+                            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                    </div>
+                    <div class="formitem">
+                        <input type="checkbox" name="cgu" id="cgu" required>
+                        <label for="cgu">J'accepte les conditions d'utilisation et le règlement de l'entreprise.</label>
+                    </div>
+                    <div class="formitem">
+                        <input type="submit" value="Envoyer">
                     </div>
                 </form>
 
@@ -57,5 +89,7 @@
         </div>
     </main>
 </body>
+
+<script src="../scripts/app.js"></script>
 
 </html>

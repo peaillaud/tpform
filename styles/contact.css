@@ -9,8 +9,75 @@
 }
 
 .formcontainer {
-    background-color: gray;
-    width: 75%;
+    background-color: #e0e1e7;
+    width: 65%;
     border-radius: 25px;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], input[type=url], input[type=password], textarea {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #E5E9F5;
+    background-color: #F6F7FA;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+fieldset {
+    display: block;
+    margin-bottom: 20px;
+    border: none;
+    padding: 0;
+}
+
+input[type=radio] {
+    border: 1px solid #E5E9F5;
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: larger;
+    visibility: hidden;
+}
+
+.fieldsetitem {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.itemsboxfs {
+    margin-top: 20px;
+}
+
+label, legend {
+    font-size: 20px;
+}
+
+input[type=submit] {
+    background-color: #00A8FF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 30%;
+    cursor: pointer;
+    transition: .25s;
+
+}
+
+input[type=submit]:hover {
+    background-color: #1d92cc;
+    color: #fff;
+    transition: .25s;
 }
