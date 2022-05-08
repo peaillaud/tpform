@@ -1,5 +1,5 @@
 var checkCGU = document.getElementById('cgu');
-
+var divcontainer = document.getElementsByClassName('formcontainer')[0];
 
 function toggleCGU() {
     if (checkCGU.checked) {
@@ -26,7 +26,11 @@ function validerForm() {
     let form = document.forms['contact'];
     let num = form.elements['tel'].value;
     if (!checkNumber(num)) {
-        alert("Veuillez entrer un numéro de téléphone valide");
-        return;
+        return alert("Veuillez entrer un numéro de téléphone valide");
     }
+    return true;
+}
+
+if (validerForm() === true) {
+    divcontainer.style.display = 'none';
 }
