@@ -57,6 +57,7 @@ nav {
     position: relative;
     left: 50px;
     font-weight: 500;
+    user-select: none;
 }
 
 .active {

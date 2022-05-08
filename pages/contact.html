@@ -28,7 +28,7 @@
     <main>
         <div class="container">
             <div class="formcontainer">
-                <form action="../scripts/app.js" method="post">
+                <form onsubmit="validerForm();return false" name="contact">
                     <div class="formitem">
                         <label for="nom">Nom</label>
                         <input type="text" name="nom" id="nom" placeholder="Nom" required>
@@ -49,6 +49,39 @@
                         <label for="naissance">Date de naissance</label>
                         <input type="date" name="naissance" id="naissance" placeholder="Date de naissance" required>
                     </div>
+                    <div class="formitem">
+                        <label for="pays">Pays :</label>
+                        <select name="pays" id="pays">
+                            <option value="AUT">Austria</option>
+                            <option value="BEL">Belgium</option>
+                            <option value="BGR">Bulgaria</option>
+                            <option value="HRV">Croatia</option>
+                            <option value="CYP">Cyprus</option>
+                            <option value="CZE">Czech Republic</option>
+                            <option value="DNK">Denmark</option>
+                            <option value="EST">Estonia</option>
+                            <option value="FIN">Finland</option>
+                            <option value="FRA">France</option>
+                            <option value="DEU">Germany</option>
+                            <option value="GRC">Greece</option>
+                            <option value="HUN">Hungary</option>
+                            <option value="IRL">Irland</option>
+                            <option value="ITA">Italy</option>
+                            <option value="LVA">Latvia</option>
+                            <option value="LTU">Lithuania</option>
+                            <option value="LUX">Luxembourg</option>
+                            <option value="MLT">Malta</option>
+                            <option value="NLD">Netherlands</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="ROU">Romania</option>
+                            <option value="SVK">Slovakia</option>
+                            <option value="SVN">Slovenia</option>
+                            <option value="ESP">Spain</option>
+                            <option value="SWE">Sweden</option>
+                        </select>
+
+                    </div>
                     <fieldset>
                         <legend>Sexe :</legend>
                         <div class="itemsboxfs">
@@ -68,20 +101,18 @@
                     </fieldset>
                     <div class="formitem">
                         <label for="password">Mot de passe</label>
-                        <input type="password" name="password" id="password"
-                            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                        <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
                     </div>
                     <div class="formitem">
                         <label for="passwordconf">Confirmation du mot de passe</label>
-                        <input type="password" name="passwordconf" id="passwordconf"
-                            placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                        <input type="password" name="passwordconf" id="passwordconf" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
                     </div>
                     <div class="formitem">
-                        <input type="checkbox" name="cgu" id="cgu" required>
-                        <label for="cgu">J'accepte les conditions d'utilisation et le règlement de l'entreprise.</label>
+                        <input type="checkbox" name="cgu" id="cgu" onclick="toggleCGU()" required>
+                        <label class="checkbox" for="cgu">J'accepte les conditions générales et la politique de confidentialité</label>
                     </div>
                     <div class="formitem">
-                        <input type="submit" value="Envoyer">
+                        <input type="submit" value="Envoyer" id="submit" disabled>
                     </div>
                 </form>
 

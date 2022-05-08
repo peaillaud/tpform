@@ -19,7 +19,14 @@
     margin-bottom: 25px;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=date], input[type=url], input[type=password], textarea {
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=password],
+input[type=number],
+select,
+textarea {
     display: block;
     margin-bottom: 20px;
     border: 1px solid #E5E9F5;
@@ -28,6 +35,11 @@ input[type=text], input[type=email], input[type=tel], input[type=date], input[ty
     margin-top: 10px;
     border-radius: 10px;
     width: 70%;
+    box-sizing: content-box;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
 }
 
 fieldset {
@@ -57,8 +69,14 @@ input[type=radio] {
     margin-top: 20px;
 }
 
-label, legend {
+label,
+legend {
     font-size: 20px;
+}
+
+option,
+select {
+    font-size: 18px;
 }
 
 input[type=submit] {
@@ -73,11 +91,22 @@ input[type=submit] {
     width: 30%;
     cursor: pointer;
     transition: .25s;
-
 }
 
 input[type=submit]:hover {
     background-color: #1d92cc;
     color: #fff;
     transition: .25s;
+}
+
+input:disabled {
+    background-color: rgb(168, 163, 163);
+    color: #fff;
+    cursor: default;
+}
+
+input:disabled:hover {
+    background-color: rgb(168, 163, 163);
+    color: #fff;
+    cursor: default;
 }
