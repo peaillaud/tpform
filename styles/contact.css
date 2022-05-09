@@ -19,6 +19,23 @@
     margin-bottom: 25px;
 }
 
+.formresult {
+    background-color: #e0e1e7;
+    width: 45%;
+    border-radius: 25px;
+    padding: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.formresult h1 {
+    color: rgb(59, 59, 59);
+    box-sizing: border-box;
+    border-bottom: rgb(120, 119, 119) 2px solid;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -109,4 +126,8 @@ input:disabled:hover {
     background-color: rgb(168, 163, 163);
     color: #fff;
     cursor: default;
+}
+
+p {
+    font-size: 22px;
 }

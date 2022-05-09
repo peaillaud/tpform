@@ -28,7 +28,7 @@
     <main>
         <div class="container">
             <div class="formcontainer">
-                <form onsubmit="validerForm();return false" name="contact">
+                <form onsubmit="validerTotal();return false" name="contact">
                     <div class="formitem">
                         <label for="nom">Nom</label>
                         <input type="text" name="nom" id="nom" placeholder="Nom" required>
@@ -83,18 +83,18 @@
 
                     </div>
                     <fieldset>
-                        <legend>Sexe :</legend>
+                        <legend>Genre :</legend>
                         <div class="itemsboxfs">
                             <div class="fieldsetitem">
-                                <input type="radio" id="homme" name="sexe" required>
+                                <input value="Homme" type="radio" id="homme" name="genre" required>
                                 <label for="homme">Homme</label>
                             </div>
                             <div class="fieldsetitem">
-                                <input type="radio" id="femme" name="sexe" required>
+                                <input value="Femme" type="radio" id="femme" name="genre" required>
                                 <label for="femme">Femme</label>
                             </div>
                             <div class="fieldsetitem">
-                                <input type="radio" id="autre" name="sexe" required>
+                                <input value="Autre" type="radio" id="autre" name="genre" required>
                                 <label for="autre">Autre</label>
                             </div>
                         </div>
@@ -109,13 +109,60 @@
                     </div>
                     <div class="formitem">
                         <input type="checkbox" name="cgu" id="cgu" onclick="toggleCGU()" required>
-                        <label class="checkbox" for="cgu">J'accepte les conditions générales et la politique de confidentialité</label>
+                        <label class="checkbox" for="cgu">J'accepte les conditions générales et la politique de confidentialité.</label>
                     </div>
                     <div class="formitem">
                         <input type="submit" value="Envoyer" id="submit" disabled>
                     </div>
                 </form>
 
+            </div>
+        </div>
+        <div class="container">
+            <div class="formresult">
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre nom
+                    </h1>
+                    <p class="val" id="nom"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre prénom
+                    </h1>
+                    <p class="val" id="prenom"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre téléphone
+                    </h1>
+                    <p class="val" id="tel"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre adresse e-mail
+                    </h1>
+                    <p class="val" id="email"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre date de naissance
+                    </h1>
+                    <p class="val" id="naissance"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre pays résidentiel
+                    </h1>
+                    <p class="val" id="pays"></p>
+                </div>
+                <div class="elem">
+                    <h1 class="formel">
+                        Votre genre
+                    </h1>
+                    <p class="val" id="genre"></p>
+                </div>
+                
             </div>
         </div>
     </main>

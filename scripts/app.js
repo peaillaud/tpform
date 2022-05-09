@@ -1,7 +1,5 @@
-var checkCGU = document.getElementById('cgu');
-var divcontainer = document.getElementsByClassName('formcontainer')[0];
-
 function toggleCGU() {
+    var checkCGU = document.getElementById('cgu');
     if (checkCGU.checked) {
         document.getElementById('submit').disabled = false;
     } else {
@@ -31,6 +29,23 @@ function validerForm() {
     return true;
 }
 
-if (validerForm() === true) {
-    divcontainer.style.display = 'none';
+
+function displayOnHtml() {
+    let form = document.forms['contact'];
+
+    let params = ['nom', 'prenom', 'tel', 'email', 'genre', 'naissance', 'pays'];
+    params.forEach(param => {
+        let formit = form.elements[param].value;
+        let pelement = document.getElementsByTagName('p')[param];
+        pelement.innerHTML = formit;
+    });
+}
+
+
+function validerTotal() {
+    if (validerForm()) {
+        let formvalid = document.getElementsByClassName('formresult')[0];
+        formvalid.style.display = 'flex';
+        displayOnHtml();
+    }
 }
