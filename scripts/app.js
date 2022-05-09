@@ -31,6 +31,21 @@ function checkNumber(tel) {
 }
 
 /**
+ * Fonction qui vérifie si la confirmation du mot de passe est correcte, et retourne un booléen.
+ * @param { String } password 
+ * @param { String } confirm 
+ * @returns { Boolean }
+ */
+
+function checkPassword(password, confirm) {
+    if (password !== confirm) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+/**
  * Fonction qui vérifie si l'entièreté du formulaire est valide, retourne true si oui, false si non.
  * @returns { Boolean }
  */
@@ -38,8 +53,12 @@ function checkNumber(tel) {
 function validerForm() {
     let form = document.forms['contact'];
     let num = form.elements['tel'].value;
+    let password = form.elements['password'].value;
+    let confirm = form.elements['passwordconf'].value;
     if (!checkNumber(num)) {
         return alert("Veuillez entrer un numéro de téléphone valide");
+    } else if (!checkPassword(password, confirm)) {
+        return alert("Les mots de passe ne sont pas les mêmes !");
     }
     return true;
 }
@@ -47,7 +66,6 @@ function validerForm() {
 /**
  * Fonction qui, pour chaque élément du formulaire, affiche sa valeur dans un paragraphe situé en dessous.
  */
-
 
 function displayOnHtml() {
     let form = document.forms['contact'];
