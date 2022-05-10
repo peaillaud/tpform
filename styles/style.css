@@ -36,7 +36,7 @@ nav {
     margin: 0;
     padding: 0;
     position: relative;
-    left: 48vw;
+    left: 35vw;
 }
 
 .navig>.item {
@@ -179,4 +179,25 @@ main {
 h2 {
     font-size: 70px;
     color: black;
+}
+
+.quisommesnous {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quisommesnous h1 {
+    font-size: 40px;
+}
+
+.quisommesnous p{
+    font-size: 20px;
+    width: 50%;
+    line-height: 2em;
+    text-align: justify;
 }
