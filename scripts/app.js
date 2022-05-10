@@ -87,5 +87,7 @@ function validerTotal() {
         let formvalid = document.getElementsByClassName('formresult')[0];
         formvalid.style.display = 'flex';
         displayOnHtml();
+        // scroll to formresult element 
+        window.scrollTo(0, document.body.scrollHeight);
     }
 }
